@@ -1,0 +1,37 @@
+---
+template: main.html
+---
+{{ define "nav"}}
+<div class="nav-panel">
+    <nav class="nav">
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+        <a href="/account">Account</a>
+    </nav>
+</div>
+{{ end }}
+{{define "content"}}
+
+<div class="container">
+    <article>
+        <h1 class="title">Forms</h1>
+        <p>To customize the theme, update the values of the following variables on the styles.css file.</p>
+        <pre>
+:root {
+    --primary: #121111;
+    --primary-inverse: #fefefe;
+    --accent: #BDBBBB;
+    --neutral: #555454;
+    --neutral-inverse: #f1f1f1;
+    --danger: #D9422B;
+    --success: #689342;
+    --warning: #E66700;
+    --sans-serif: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --serif: Georgia, 'Times New Roman', Times, serif;
+    --code: 'Courier New', Courier, monospace;
+}
+        </pre>
+    </article>
+</div>
+
+{{end}}

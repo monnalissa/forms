@@ -1,0 +1,30 @@
+---
+template: main.html
+title: About Us
+---
+{{ define "nav"}}
+<div class="nav-panel">
+    <a href="/" class="link back">&#x1F844; Home</a>
+    <nav class="nav">
+        <a href="/login">Login</a>
+        <a href="/register">Register</a>
+        <a href="#">Account</a>
+    </nav>
+</div>
+{{ end }}
+{{define "content"}}
+<div class="container">
+    <form class="form">
+        <h1 class="title">Password</h1>
+        <div class="field">
+            <label for="password">Password</label>
+            <input id="password" type="password"/>
+        </div>
+        <div class="field">
+            <label for="confirm">Re-Type Password</label>
+            <input id="confirm" type="password"/>
+        </div>
+        <button type="submit" class="button">Update</button>
+    </form>
+</div>
+{{end}}

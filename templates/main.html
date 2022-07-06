@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {{template "head" .}}
+</head>
+
+<body>
+    <div class="backdrop"></div>
+    <div class="workspace">
+        <figure class="sidebar">
+            <div class="nav-panel">
+                {{template "nav" .}}
+            </div>
+            <figure class="logo">F</figure>
+        </figure>
+        <div class="main">
+            {{template "content" .}}
+        </div>
+    </div>
+</body>
+</html>
